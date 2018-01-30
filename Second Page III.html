@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+   <title>Second Page III</title>
+   <head>
+      <meta charset="utf-8">
+      <script 
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+      crossorigin="anonymous">
+      </script>
+      <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+      crossorigin="anonymous">
+      </script>
+      <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" 
+      integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" 
+      crossorigin="anonymous">
+      </script>
+      <link 
+      rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" 
+      integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" 
+      crossorigin="anonymous">
+      <link 
+      rel="stylesheet" 
+      href="css/style.css">
+      <link
+      rel="stylesheet"
+      href="css/animation.css">
+      <script>
+      function DisplayBottom() {
+      	  document.getElementById("A1").style.visibility = "hidden";
+      	  document.getElementById("A2").style.visibility = "hidden";
+      	  document.getElementById("A3").style.visibility = "hidden";
+      	  document.getElementById("A4").style.visibility = "hidden";
+      	  document.getElementById("A5").style.visibility = "hidden";
+      	  document.getElementById("A6").style.visibility = "hidden";
+      	  document.getElementById("B1").style.visibility = "visible";
+      	  document.getElementById("B2").style.visibility = "visible";
+      }
+      function DisplayTop() {
+      	  document.getElementById("A1").style.visibility = "visible";
+      	  document.getElementById("A2").style.visibility = "visible";
+      	  document.getElementById("A3").style.visibility = "visible";
+      	  document.getElementById("A4").style.visibility = "visible";
+      	  document.getElementById("A5").style.visibility = "visible";
+      	  document.getElementById("A6").style.visibility = "visible";
+      	  document.getElementById("B1").style.visibility = "hidden";
+      	  document.getElementById("B2").style.visibility = "hidden";
+      }
+      </script>
+      <style type="text/css">
+      .MoveIn {
+        -webkit-animation-name: MoveIn;
+        -webkit-animation-duration:0.3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes MoveIn {
+        from {
+          -webkit-transform: translate(0px);
+        }
+        to {
+          -webkit-transform: translate(1158px);
+        }
+      }
+      .FPMoveIn {
+      	-webkit-animation-name: FPMoveIn;
+        -webkit-animation-duration:0.3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes FPMoveIn {
+      	  from {
+      	  	  -webkit-transform: translate(0px);
+      	  }
+      	  to {
+      	  	  -webkit-transform: translate(1158px);
+      	  }
+      }
+      .FadeIn {
+      	  -webkit-animation-name: FadeIn;
+      	  -webkit-animation-duration: 0.3s;
+      	  -webkit-animation-iteration-count: 1;
+      	  -webkit-animation-timing-function: ease;
+      	  -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes FadeIn {
+      	  from {
+      	  opacity: 0;
+      	  visibility: visible};
+      	  to {
+      	  opacity: 0.3
+      	  visibility: visible};
+      }
+      .MoveOut {
+        -webkit-animation-name: MoveOut;
+        -webkit-animation-duration: 0.3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes MoveOut {
+        from {
+          -webkit-transform: translate(1158px);
+        }
+        to {
+          -webkit-transform: translate(0px);
+        }
+      }
+      .FPMoveOut {
+      	-webkit-animation-name: FPMoveOut;
+        -webkit-animation-duration:0.3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes FPMoveOut {
+      	  from {
+      	  	  -webkit-transform: translate(1158px);
+      	  }
+      	  to {
+      	  	  -webkit-transform: translate(0px);
+      	  }
+      }
+      .FadeOut {
+      	  -webkit-animation-name: FadeOut;
+      	  -webkit-animation-duration: 0.3s;
+      	  -webkit-animation-iteration-count: 1;
+      	  -webkit-animation-timing-function: ease;
+      	  -webkit-animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes FadeOut {
+      	  from {
+      	  opacity: 0.3;
+      	  visibility: visible};
+      	  to {
+      	  opacity: 0;
+      	  visibility: hidden};
+      }
+      	  	  
+      </style>
+      <script type="text/javascript">
+        function MenuMoveIn(){
+          document.getElementById('CM').className ='MoveIn';
+          document.getElementById('C1').className ='FPMoveIn';
+          document.getElementById('CS').style.visibility ='visible';
+          document.getElementById('CS').className ='FadeIn';
+        }
+        function MenuMoveOut(){
+        	document.getElementById('CM').className ='MoveOut';
+        	document.getElementById('C1').className ='FPMoveOut';
+        	document.getElementById('CS').className ='FadeOut';
+        }
+      </script>
+   </head>
+   <body style="overflow: hidden;">
+      <div 
+      id="A1";
+      style="
+      position:absolute; 
+      left:0; 
+      top:0; 
+      width:100%; 
+      height:100%;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      visibility: visible">
+         <img src="img/Second Page.jpg"/>
+      </div>
+      <div 
+      id="A2";
+      style="
+      position: absolute;
+      margin-top: 2354px;
+      margin-left: 554px;
+      visibility: visible"> 
+         <a href="Second Page eco.html">
+         <img src="button/Second Page/Eco Ride.png"/>
+         </a>
+      </div>
+      <div 
+      id="A3";
+      style="
+      position: absolute;
+      margin-top: 140px;
+      margin-left: 67px;
+      visibility: visible"> 
+         <img src="button/Second Page/Menu.png" 
+         onclick="MenuMoveIn()"/>
+      </div>
+      <div 
+      id="A4";
+      style="
+      position: absolute;
+      margin-top: 1525px;
+      margin-left: 140px;
+      visibility: visible"> 
+         <a href="Second Page evove.html">
+         <img src="button/Second Page/Select Station.png"/>
+         </a>
+      </div>
+      <div 
+      id="A5";
+      style="
+      position: absolute;
+      margin-top: 342px;
+      margin-left: 150px;"> 
+         <a href="Search 2 Keyboard.html">
+         <img src="button/Second Page/Where To Go.png"/>
+         </a>
+      </div>
+      <div 
+      id="A6";
+      style="
+      position: absolute;
+      margin-top:2491px;
+      margin-left:40px;
+      visibility: visible;">
+         <img src="button/Second Page/It's all about non-stop.png" 
+         onclick="DisplayBottom()"/>
+      </div>
+      
+      <div
+      id="B1";
+      style="
+      position:absolute;
+      margin-top:0px;
+      margin-left:0px;
+      visibility: hidden">
+         <img src="img/freebird express ride bottom.jpg"/>
+      </div>
+      <div
+      id="B2";
+      style="
+      position:absolute;
+      margin-top:92px;
+      margin-left:60px;
+      visibility: hidden;">
+         <img src="button/freebird express ride bottom/Arrow-Up.png" 
+         onclick="DisplayTop()"/>
+      </div>
+      
+      <div
+      id="CM";
+      style="
+      position: absolute;
+      margin-top: 0px;
+      margin-left: -1158px;
+      visibility: visible;
+      z-index: 2;">
+         <img src="button/Second Page/side menu.png"/>
+      </div>
+      <div
+      id="C1";
+      style="
+      position: absolute;
+      margin-top: 1010px;
+      margin-left: -1068.1px;
+      visibility: visible;
+      z-index: 2;">
+         <img src="button/Second Page/Free Point.png"/>
+      </div>
+      <div
+      id="CS";
+      style="
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 0px;
+      visibility: hidden;
+      width: 1500px;
+      height: 2668px;
+      opacity: 0;
+      background-color: black;
+      z-index: 1;"
+      onclick="MenuMoveOut()">
+      </div>   
+   </body>
+</html>
