@@ -1,0 +1,13 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#all{
+	position: absolute;
+	left: -100vw;
+	transition:left 1s;
+    -moz-transition:left 1s;/* Firefox 4 */
+    -webkit-transition:left 1s; /* Safari and Chrome */
+    -o-transition:left 1s; /* Opera */
+}
