@@ -61,10 +61,10 @@
       }
       @-webkit-keyframes MoveIn {
         from {
-          -webkit-transform: translate(0px);
+          -webkit-transform: translate(-1158px);
         }
         to {
-          -webkit-transform: translate(1158px);
+          -webkit-transform: translate(0px);
         }
       }
       .FPMoveIn {
@@ -76,10 +76,10 @@
       }
       @-webkit-keyframes FPMoveIn {
       	  from {
-      	  	  -webkit-transform: translate(0px);
+      	  	  -webkit-transform: translate(1158px);
       	  }
       	  to {
-      	  	  -webkit-transform: translate(1158px);
+      	  	  -webkit-transform: translate(0px);
       	  }
       }
       .FadeIn {
@@ -102,14 +102,15 @@
         -webkit-animation-duration: 0.3s;
         -webkit-animation-iteration-count: 1;
         -webkit-animation-timing-function: ease;
-        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: backwards;
+		animation-direction: reverse;
       }
       @-webkit-keyframes MoveOut {
         from {
-          -webkit-transform: translate(1158px);
+          -webkit-transform: translate(0px);
         }
         to {
-          -webkit-transform: translate(0px);
+          -webkit-transform: translate(-1158px);
         }
       }
       .FPMoveOut {
@@ -117,7 +118,7 @@
         -webkit-animation-duration:0.3s;
         -webkit-animation-iteration-count: 1;
         -webkit-animation-timing-function: ease;
-        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: backwards;
       }
       @-webkit-keyframes FPMoveOut {
       	  from {
@@ -132,7 +133,7 @@
       	  -webkit-animation-duration: 0.3s;
       	  -webkit-animation-iteration-count: 1;
       	  -webkit-animation-timing-function: ease;
-      	  -webkit-animation-fill-mode: forwards;
+      	  -webkit-animation-fill-mode: backwards;
       }
       @-webkit-keyframes FadeOut {
       	  from {
@@ -142,6 +143,8 @@
       	  opacity: 0;
       	  visibility: hidden};
       }
+	  
+	  
       	  	  
       </style>
       <script type="text/javascript">
@@ -172,7 +175,7 @@
       margin-right: 0px;
       margin-bottom: 0px;
       visibility: visible">
-         <img src="img/Second Page.jpg"/>
+         <img src="img/Second Page.jpg" />
       </div>
       <div 
       id="A2";
@@ -265,11 +268,9 @@
       margin-left: -1068.1px;
       visibility: visible;
       z-index: 2;">
-         <img src="button/Second Page/Free Point.png"/>
+         <img src="button/Second Page/Free Point.png" />
       </div>
-      <div
-      id="CS";
-      style="
+      <div id="CS"; style="
       position: absolute;
       margin-top: 0px;
       margin-left: 0px;
